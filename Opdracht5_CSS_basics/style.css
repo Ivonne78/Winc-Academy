@@ -1,0 +1,62 @@
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+
+/* Nav bar styling - Begin */
+
+nav {
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  display: inline;
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 15px;
+  margin: 4px;
+  background-color: #9AD8DA;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #04d7df;
+}
+
+/* Nav bar styling - End */
+
+
+header {
+  text-align: left;
+  margin: 10px;
+  padding: 15px;
+}
+
+main {
+  background-color: #9ad8da;
+  margin: 40px;
+  padding: 15px;
+  border-top: 20px #013133 solid;
+  border-bottom: 20px #013133 solid;
+}
+
+footer {
+  text-align: center;
+}
+
+#pasfoto {
+  border-radius: 50%;
+  width: 200px;
+}
+
+
