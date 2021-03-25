@@ -1,0 +1,172 @@
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: black;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:link a:visited {
+  text-decoration: none;
+}
+
+a:hover a:active {
+  background-color: #04d7df;
+  color: black;
+  border: 1px solid #013133;
+}
+
+.button, button {
+  background-color: #04d7df;
+  padding: 10px 15 px;
+  border: 1px solid #013133;
+  padding: 14px;
+  margin: 4px;
+  font-family:Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Nav bar styling - Begin */
+
+nav {
+
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header nav li {
+  display: inline;
+  float: left;
+}
+
+header li a {
+  display: block;
+  padding: 14px;
+  margin: 4px;
+  background-color: #9AD8DA;
+}
+
+
+/* Nav bar styling - End */
+
+
+header {
+  text-align: left;
+  margin: 50px 10px;
+  padding: 15px;
+}
+
+.main {
+  background-color: #9ad8da;
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px;
+  border-top: 20px #013133 solid;
+  border-bottom: 20px #013133 solid;
+}
+
+main li {
+  padding-left: 10px;
+  margin: 0px 25px;
+}
+
+footer {
+  text-align: center;
+}
+
+#pasfoto {
+  border-radius: 50%;
+  width: 200px;
+}
+
+/* Portfolio page - Begin */
+
+.portfolio {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #9ad8da;
+  border-top: 20px #013133 solid;
+  border-bottom: 20px #013133 solid;
+}
+
+.projects li {
+  list-style: none;
+}
+
+img.projects {
+  width: 200px;
+  margin: 0 auto;
+}
+
+/* Portfolio page - End */
+
+
+/* Formulier op contactpagina - Begin */
+
+form.my-form {
+  padding: 10px 0;
+  margin; 0 auto;
+}
+
+.my-form {
+  padding: 30px;
+  width: 90%;
+}
+
+.form-group {
+  padding-bottom: 10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+}
+
+.my-form label {
+  display: block;
+}
+
+.my-form input, .my-form textarea {
+  padding: 8px;
+  width: 100%;
+}
+
+/* Formulier op contactpagina - Eind */
+
+/* CSS Media Queries - Begin
+
+Mobile first werken!
+
+      // Smartphones (portrait)
+      minimale breedte : 320px;
+
+      // Tablets (portrait)
+      minimale breedte : 768px
+
+      // Desktop 
+      minimale breedte : 1024px
+ */
+
+@media (min-width: 1024px) {
+  body {
+    background-color:#cbd9da; 
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .main {
+    width: 90%;
+    margin: 0 auto;
+
+  .portfolio {
+      width: 90%;
+  }
+}
+
+/* CSS Media Queries - Eind */
+
