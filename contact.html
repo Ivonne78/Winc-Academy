@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contact</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h2>Contactformulier</h2>
+        <p>Alle begin is moeilijk. Dit is mijn eerste website gemaakt met HTML en CSS. Kom zeker nog een keer terug om
+            de vordering te volgen. </p>
+        <p>Vragen, opmerkingen of tips, deze zijn allemaal welkom en worden zeer gewaardeerd. </p>
+
+        <form name="contact" class="my-form" method="POST" data-netlify="true">
+            <p class="form-group">
+                <label>Naam</label>
+                <input type="text" name="name">
+            </p>
+            <p class="form-group">
+                <label>Emailadres</label>
+                <input type="email" name="email">
+            </p>
+            <p class="form-group">
+                <label>Telefoonnummer</label>
+                <input type="tel" name="phone" pattern="[0-9]">
+            </p>
+            <p class="form-group">
+                <label>Leeftijd</label>
+                <input type="number" name="number" min="1" max="120">
+            </p>
+            <p class="form-group">
+                <label>Geboortedatum</label>
+                <input type="date" name="date">
+            </p>
+            <p class="form-choice">
+                Gender
+                <br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label>Man</label>
+                <br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label>Vrouw</label>
+                <br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label>Overige</label>
+                <br>
+                <input type="radio" id="not-defined" name="gender" value="not-defined">
+                <label>Niet opgegeven</label>
+            </p>
+            <p class="form-choice">
+                Favoriete cuisine
+                <br>
+                <input type="checkbox" id="frans" name="cuisine" value="frans">
+                <label>Frans</label>
+                <br>
+                <input type="checkbox" id="italiaans" name="cuisine" value="italiaans">
+                <label>Italiaans</label>
+                <br>
+                <input type="checkbox" id="spaans" name="cuisine" value="spaans">
+                <label>Spaans</label>
+                <br>
+                <input type="checkbox" id="arabisch" name="cuisine" value="arabisch">
+                <label>Arabisch</label>
+            </p>
+            <p class="form-group">
+                <label>Favoriete kleur</label>
+                <input type="color" name="favcolor">
+            </p>
+            <p class="form-group">
+                <label>Biografie</label>
+                <textarea name="biografie"></textarea>
+            </p>
+            <p class="from-group">
+                <label>Upload je lekkerste recept</label>
+                <input type="file" name="myfile">
+            </p>
+            <p class="from-group">
+                <label>Add your homepage</label>
+                <input type="url" name="homepage">
+            </p>
+            <button type="reset">Reset</button>
+            <button type="submit">Verzenden</button>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2021 Ivonne</p>
+    </footer>
+</body>
+
+</html>
