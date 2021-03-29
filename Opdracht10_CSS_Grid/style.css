@@ -1,0 +1,100 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 3fr 1fr;
+    grid-gap: 3px;
+    } 
+
+
+header {
+    background-color:rgb(0, 162, 255);
+}
+
+main {
+    background-color: rgb(64, 248, 156);
+}
+
+article {
+    background-color: rgb(197, 92, 197);
+}
+
+footer {
+    background-color: rgb(71, 71, 221);
+}
+
+/* CSS Media Queries
+
+Mobile first werken!
+
+      // Smartphones (portrait)
+      minimale breedte : 320px;
+
+      // Tablets (portrait)
+      minimale breedte : 768px
+
+      // Desktop 
+      minimale breedte : 1024px
+ */
+
+@media (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 6fr 3fr 1fr;
+        grid-gap: 3px;
+        } 
+    
+    
+    header {
+        background-color:rgb(0, 162, 255);
+        grid-column: 1 / 2;
+        grid-row: 1 / -1;
+    }
+    
+    main {
+        background-color: rgb(64, 248, 156);
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    
+    article {
+        background-color: rgb(197, 92, 197);
+        grid-column: 3 / -1;
+        grid-row: 1 / -1;
+    }
+    
+    footer {
+        background-color: rgb(71, 71, 221);
+        grid-column: 2 / 3;
+        grid-row: 2 / -1;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 9fr 1fr;
+        grid-gap: 3px;
+        } 
+    
+    
+    header {
+        background-color:rgb(0, 162, 255);
+        grid-column: 1 / 2;
+        grid-row: 1 / -1;
+    }
+    
+    main {
+        background-color: rgb(64, 248, 156);
+    }
+    
+    article {
+        background-color: rgb(197, 92, 197);
+    }
+    
+    footer {
+        background-color: rgb(71, 71, 221);
+    }
+}
