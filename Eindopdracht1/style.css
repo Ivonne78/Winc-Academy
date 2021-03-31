@@ -1,0 +1,150 @@
+body {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: greenyellow;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+    grid-template-rows: auto 50px 1fr auto;
+    grid-template-areas: 
+    "h h h"
+    "n n n"
+    "m m m"
+    "f f f";
+}
+
+header {
+   grid-area: h;
+   margin: 0;
+}
+
+header img {
+   width: 100%;   
+}
+
+nav {
+    background-color:green;
+    border-bottom: 4px #fff solid;
+    margin: 0;
+    grid-area: n;
+}
+
+main {
+    background-color: lightgreen;
+    grid-area: m;
+    padding: 10px;
+}
+
+footer {
+    grid-area: f;
+}
+
+.img-footer {
+    width: 100%;
+}
+
+.slide {
+    width: 300px;
+}
+
+.video {
+    width: 300px;
+}
+
+.invul-form {
+    margin-left: 15px;
+}
+
+.invul-form input {
+    width: 200px;
+
+}
+
+#doorIvonne {
+    font-style: italic;
+}
+
+
+/*
+Mobile first werken!
+
+      // Smartphones (portrait)
+      minimale breedte : 320px;
+
+      // Tablets (portrait)
+      minimale breedte : 768px
+
+      // Desktop 
+      minimale breedte : 1024px
+
+ */
+
+@media (min-width: 768px) {
+    .grid-container {
+        display: grid;
+        background-color: rgb(183, 183, 189);
+        grid-template-columns: 30px 150px 1fr 30px;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+        "h h h h"
+        ". n m ."
+        "f f f f";
+    }
+
+    .story {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0px 15px;
+    }
+    
+    .art-story_1 {
+        width: 45%;
+        padding: 0 20px;
+        order: 2;
+    }
+    
+    .art-story_2 {
+        width: 45%;
+        padding: 0 20px;
+        order: 1;
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 30px 1fr 100px 30px;
+        grid-template-rows: 50px 400px 1fr auto;
+        grid-template-areas: 
+        "n n n n"
+        "h h h h"
+        "m m m m"
+        "f f f f";
+    }
+}

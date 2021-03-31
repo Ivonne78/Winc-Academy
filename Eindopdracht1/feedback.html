@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Eindopdracht - Hackathon: maak eigen website met HTML/CS</title>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <img src="images/uganda-banner_3.jpg" alt="Sfeerplaatje Uganda">
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="uganda.html">Uganda</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+
+        <main>
+           
+            <form name="feedback" method="POST" data-netlify="true">
+                <h2>Eindopdracht - Hackathon: maak eigen website met HTML/CS</h2>
+                <h3> Minimum vereisten</h3>
+                <p>Zorg dat jouw website de volgende eigenschappen heeft, meer mag natuurlijk altijd!</p>
+                    <input type="checkbox" id="design" name="design">
+                    <label for="design">Gebruik een duidelijk onderwerp voor jouw website: "mijn website gaat over... " (0,5 punt)</label>
+                    <br>
+                    <input type="checkbox" id="multi-page" name="multi-page">
+                    <label for="multi-page">Gebruik meerdere pagina's in jouw website. (0,5 punt)</label>
+                    <br> 
+                    <input type="checkbox" id="div-html" name="div-html">
+                    <label for="div-html">Gebruik minsten 5 verschillende HTML elementen.(0,5 punt)</label>
+                    <br>
+                    <input type="checkbox" id="sem-html" name="sem-html">
+                    <label for="sem-html">Gebruik semantische HTML elementen op de juiste plaatsen met de juiste betekenis. (0,5 punt)</label>
+                    <br>
+                    <input type="checkbox" id="css-style" name="css-style">
+                    <label for="css-style">Gebruik CSS in een losse stylesheet (gebruik geen inline CSS = CSS in de HTML & gebruik geen CSS frameworks). (0,5 punt)</label>
+                    <br>
+                    <input type="checkbox" id="box-model" name="box-model">
+                    <label for="box-model">Gebruik minstens op 2 plekken, padding margin of borders op jouw website. Met andere woorden: laat aan ons zien dat jij het box-model onder de knie hebt. (0,5 punt)</label>
+                    <br>
+                    <input type="checkbox" id="1-pic" name="1-pic">
+                    <label for="1-pic">Gebruik minstens 1 plaatje. (0,5 punt)</label>
+                    <br>
+                    <input type="checkbox" id="2-links" name="2-links">
+                    <label for="2-links">Gebruik minsten 2 links. (0,5 punt)</label>
+                    <br>
+                    <input type="checkbox" id="MC" name="MC">
+                    <label for="MC">Gebruik MediaQueries, zodat je website er anders uit ziet op mobiel en op desktop. (0,5 punt)</label>
+                    <br>
+                    <input type="checkbox" id="grid" name="grid">
+                    <label for="grid">Gebruik CSS-grid om een layout te maken en al je elementen op de pagina te positioneren (1 punt)</label>
+                    <br>
+                    <input type="checkbox" id="flex" name="flex">
+                    <label for="flex">Gebruik flex-box om elementen te positioneren.(1 punt)</label>
+                    <br>
+                    <input type="checkbox" id="form" name="form">
+                    <label for="form">Gebruik minstens 1 formulier op jouw website. (1 punt)</label>
+                    <br>
+                    <input type="checkbox" id="mobile-first" name="mobile-first">
+                    <label for="mobile-first">Jouw website is mobile-first. De basis CSS is voor een mobiele telefoon, de extra CSS voor op desktop staat in een media-query. (1 punt)</label>
+                    <br>
+                    <input type="checkbox" id="spelling" name="spelling">
+                    <label for="spelling">We kijken ook naar de netheid: zorg dus dat alle "spelfoutjes" uit je code zijn (gebruik een linter). (0,5 punt)</label>
+                    <br>
+                    <input type="checkbox" id="format" name="format">
+                    <label for="format">Zorg daarnaast dat je code juiste geformatteerd is. Gebruik spaties en enters op de juiste manier . (0,5 punt)</label>
+
+                <h3>Bonus voor extra punten</h3>
+                <p>Als je ons echt onder de indruk wilt laten zijn van jouw vaardigheden:</p>
+                    <input type="checkbox" id="video" name="video">
+                    <label for="video">Gebruik een embedded YouTube video.</label>
+                    <br>
+                    <input type="checkbox" id="pics" name="pics">
+                    <label for="pics">Gebruik veel mooie afbeeldingen, bijvoorbeeld van stockfoto websites.</label>
+                    <br>
+                    <input type="checkbox" id="MC+" name="MC+">
+                    <label for="MC+">Gebruik ook een design en gebruik media-queries voor andere screen-sizes, denk aan: tablet.</label>
+                    <br>
+                    <input type="checkbox" id="color" name="color">
+                    <label for="color">Gebruik mooie op elkaar afgestemde kleuren.</label>
+                    <br>
+                    <input type="checkbox" id="google-fonts" name="google-fonts">
+                    <label for="google-fonts">Gebruik externe libraries zoals Google Fonts, om extra CSS aan je website toe te voegen.</label>
+                    <br>
+                    <input type="checkbox" id="form+" name="form+">
+                    <label for="form+">Gebruik een uitgebreid formulier met veel verschillende soorten inputvelden.</label>
+                    <br>
+                    <br>
+                    <label for="name">Naam</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    Feedback:
+                    <br>
+                    <textarea name="textarea" id="textarea" cols="35" rows="10"></textarea>
+                    <br>
+                    <button type="submit">Verzenden</button>
+            </form>
+        </main>
+
+        <footer>
+            <img class="img-footer" src="images/footer.jpg" alt="sfeerplaatje uganda-banner_3">           
+        </footer>
+    </div>
+</body>
+</html>
