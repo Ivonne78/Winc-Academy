@@ -1,0 +1,105 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+
+h2 {
+    color: grey;
+    font-size: 10px;
+}
+
+img {
+    float: right;
+    width: 30px;
+}
+
+.button-approve {
+    border: 1px solid lightgreen;
+    color: lightgreen;
+    background-color: #fff;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    margin: 0;
+}
+
+.button-decline {
+    border: 1px solid red;
+    color: red;
+    background-color: #fff;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin: 0;
+}
+
+.footer_carla,
+.footer_marijn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button {
+    width: 45%;
+    height: 30px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+.Carla {
+    grid-column: 1 / 2;
+    border: grey solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 5px 10px 10px;
+}
+    
+.Marijn {
+    grid-column: 2 / -1;
+    border: grey solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 5px 10px 10px;
+}
+   
+
+/*
+.grid-container {
+    display: grid;
+    grid-template-columns: 30px 1fr 30px 1fr 30px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    ". hc . hm ."
+    ". sc . sm ."
+    ". fc . fm .";
+}
+
+.header_carla {
+    grid-area: hc;
+}
+
+.section_carla {
+    grid-area: sc;
+}
+.footer_carla {
+    grid-area: fc;
+}
+
+.header_marijn {
+    grid-area: hm;
+}
+
+.section_marijn {
+    grid-area: sm;
+}
+
+.footer_marijn {
+    grid-area: fm;
+}
+*/
