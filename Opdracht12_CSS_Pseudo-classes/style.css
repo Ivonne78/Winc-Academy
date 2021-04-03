@@ -1,0 +1,41 @@
+.link1:hover {
+    color: lightskyblue;
+    font-style: bold;
+}
+
+.link2:active {
+    color: red;
+    font-style: italic;
+}
+
+.link3:visited {
+    color: yellow;
+}
+
+.link4:focus {
+    color: greenyellow;
+    font-size: 20px;
+}
+
+li {
+    display: inline;
+    margin: 10px;
+}
+
+ul {
+    padding: 0;
+    background-color: blue;
+}
+
+.currentPage {
+    background-color: lightskyblue;
+}
+
+a:hover {
+    background-color: lightskyblue;
+}
+
+.link4:focus {
+    border: 2px solid aqua;
+    color: black;
+}
