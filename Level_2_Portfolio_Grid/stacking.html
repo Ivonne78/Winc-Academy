@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacking</title>
+    <style>
+        .grandparent {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(7, 1fr);
+            grid-gap: 10px;
+            margin: 10px;
+            position: relative;
+        } 
+
+        .child {
+            grid-area: 1 / 1 / 2 / 2;
+            opacity: 0.5;
+         
+        }
+
+        .parent1 {
+            position: relative;
+        }
+
+        .child1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+   
+
+        .child2:hover img {
+            opacity: 0;
+        }
+
+        @media (min-width:768px) {
+            .parent {
+                display: grid;
+                grid-gap: 20px;
+                margin: 20px;
+                grid-template-columns: 1fr 1fr; 
+            }
+        }
+
+        @media (min-width:1024px) {
+            .parent {
+                display: grid;
+                grid-gap: 30px;
+                margin: 0px;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="grandparent">
+
+        <div class="parent1">
+            <button class="child1">Read More</button>
+            <img class="child2" src="./images/niceday.jpg" alt="Hondje met ballon">
+        </div>
+
+        <div class="parent2">
+            <button class="child2">Read More</button>
+            <img class="child2" src="./images/niceday.jpg" alt="Hondje met ballon">
+        </div>
+
+    </main>
+
+</body>
+</html>

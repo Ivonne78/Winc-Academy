@@ -1,0 +1,152 @@
+$backgroundColor: #c3cfe2;
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: $backgroundColor;
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    width: 100%;
+    transition: opacity 500ms ease-in-out 250ms;
+    /* opacity: 0.5;  gebruikt om te testen */
+}
+
+.button {
+    background-color: rgb(54, 54, 117);
+    color: #fff;
+    opacity: 0;
+    /* opacity: 0.5;  gebruikt om te testen */
+ 
+}
+
+.container__img1 {
+    position: relative;
+}
+
+.button1 {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.container__img2 {
+    position: relative;
+}
+.button2 {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.container__img3 {
+    position: relative;
+}
+.button3 {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.container__img4 {
+    position: relative;
+}
+.button4 {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.container__img5 {
+    position: relative;
+}
+.button5 {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.container__img6 {
+    position: relative;
+}
+.button6 {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.container__img7 {
+    position: relative;
+}
+.button7 {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.container__img:hover img {
+    opacity: 0;
+    transition: opacity 150ms ease-in-out 500ms;
+}
+
+.container__img:hover .button {
+    background-color: rgb(63, 63, 156);
+    transition: opacity 150ms ease-in-out 500ms;
+    opacity: 1;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 10px;
+    margin: 10px;
+} 
+
+@media (min-width:768px) {
+    .container {
+        display: grid;
+        grid-gap: 20px;
+        margin: 20px;
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+@media (min-width:1024px) {
+    .container {
+        display: grid;
+        grid-gap: 30px;
+        margin: 0px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* 
+    Mobile first werken!
+    // Smartphones (portrait)
+    minimale breedte : 320px;
+
+    // Tablets (portrait)
+    minimale breedte : 768px
+
+    // Desktop 
+    minimale breedte : 1024px  
+*/
