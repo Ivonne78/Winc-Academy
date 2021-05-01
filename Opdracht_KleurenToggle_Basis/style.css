@@ -1,0 +1,50 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: block;
+    list-style-type: none;
+    background-color: grey;
+    margin: 4px 0px;
+    padding: 10px;
+    width: 200px;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.home {
+    background-color: grey;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.green {
+    background-color: green;
+}
+
+.hamburger-icoon {
+    width: 50px;
+}
